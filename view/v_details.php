@@ -18,16 +18,17 @@
 
     <h1>
         <?php
-            echo "Titre : " . $row["nom"];
+            echo "Titre : " . $movie["nom"];
         ?>
     </h1>
 
     <p>
         <?php
-            echo "Année : " . $row["annee"];
-            echo "Nombre de votes : " . $row["nbVotant"];
-            echo "Score : " . $row["score"];
-            echo "Synopsis : faut en faire 1 par film mais bon...";
+            echo "Année : " . $movie["annee"] . "<br>";
+            echo "Nombre de votes : " . $movie["nbVotant"] . "<br>";
+            echo "Score : " . $movie["score"] . "<br>";
+            echo "Synopsis : faut en faire 1 par film mais bon..." . "<br>"; // ici je pourrais aussi le faire en cherchant dnas la DB mais j'ai pas le temps de mettre dans la DB
+            // mais en gros ça serait echo "Score : " . $movie["Synopsis"] . "<br>";
         ?>
     </p>
 

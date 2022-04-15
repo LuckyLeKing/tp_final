@@ -30,4 +30,14 @@
 		$query->closeCursor();
 	}
 
+    function get_movie($id)
+    {
+        $db = connectDb();
+        $stmt = $db->prepare("SELECT * FROM film WHERE id=?");
+        $stmt->execute([$id]);
+        $data = $stmt->fetch();
+        $stmt->closeCursor();
+        return $data;
+    }
+
 ?>

@@ -63,7 +63,7 @@
 
 						<td><?= $row["annee"]; ?></td>
 						<td><?= $row["score"]; ?></td>
-						<td><?php echo $row["nbVotant"]; echo isset($_SESSION["user"]) ? "<a href=\"index.php?target=voter\"> ➕</a>" : "";         ?>  </td>
+						<td><?php echo $row["nbVotant"]; echo isset($_SESSION["user"]) ? "<a href=vote.php> ➕</a>" : "";         ?>  </td>
 					</tr>
 				<?php } ?>
 			</tbody>
