@@ -8,8 +8,6 @@
 	session_start();
 
 	include_once("lib/connexion.php");
-	include_once("lib/createdb.php");
-
 	$target = isset($_GET["target"]) ? $_GET["target"] : "home"; 
 
 	require_once("controller/c_" . $target . ".php");

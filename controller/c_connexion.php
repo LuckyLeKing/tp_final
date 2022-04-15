@@ -42,6 +42,7 @@
 		if (couple_mdp_pwd($_POST["nom_user"], $_POST["mdp_user"]))
 		{
 			echo "<p id=messagesign style=\"color:green; font-size:20px; text-align:center;\">Connexion établie avec succès</p>";
+			$_SESSION["user"] = $_POST["nom_user"];
 			
 		}
 		else

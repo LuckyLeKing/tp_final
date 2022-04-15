@@ -56,10 +56,14 @@
 				<?php foreach ($data as $key => $row) { ?>
 					<tr>
 						<td><?= $row["id"]; ?></td>
-						<td><?= $row["nom"]; ?></td>
+
+						<td><?php 	echo $row["nom"];  ?>
+									<a href="index.php?target=detail&movie=<?php echo$row["id"] ?> ">🔎</a>
+						</td>
+
 						<td><?= $row["annee"]; ?></td>
 						<td><?= $row["score"]; ?></td>
-						<td><?= $row["nbVotant"]; ?></td>
+						<td><?php echo $row["nbVotant"]; echo isset($_SESSION["user"]) ? "<a href=\"index.php?target=voter\"> ➕</a>" : "";         ?>  </td>
 					</tr>
 				<?php } ?>
 			</tbody>
