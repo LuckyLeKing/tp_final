@@ -16,7 +16,7 @@
             <ul>
                 <li><a href="index.php?target=home">Accueil</a></li>
                 <li><a href="index.php?target=connexion">Connexion</a></li>
-                <li><a href="index.php?target=formulaire">Ajouter un film</a></li>
+                <li><a href="index.php?target=addMovie">Ajouter un film</a></li>
             </ul>
         </section>
         <h1>Se connecter</h1>
